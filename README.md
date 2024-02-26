@@ -31,4 +31,4 @@ This project is licensed under the [MIT License](#), allowing for both personal 
 
 ## Credits
 
-This project was developed by [Your Name] and [Contributor Names], and is maintained by [Maintainer Name].
+This project was developed by myself Mansi Singh and is maintained by me only.
