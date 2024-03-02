@@ -1,3 +1,4 @@
+# additional_preprocessing/apply_pca.py
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -31,7 +32,7 @@ def apply_pca(X_train, X_test):
     plt.show()
 
     # Save the variance ratio as an image file
-    plt.savefig('../../images/explained_variance.png')
+    plt.savefig('...')
 
     # Add a comment indicating that the countplot image has been saved
     print("Explained variance ratio plot saved as 'explained_variance.png'")

@@ -1,4 +1,4 @@
-# model_training.py
+# models/model_training.py
 
 def train_classifier(model, X_train, y_train):
     """

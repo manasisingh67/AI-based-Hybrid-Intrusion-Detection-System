@@ -1,0 +1,62 @@
+
+Accuracy: 1.00
+Classification Report:
+<function generate_classification_report at 0x0000013897C0ACA0>
+The Accuracy of the Model is 0.999618979312818
+The Precision of the Model is 0.9996189648359307
+The Recall of the Model is 0.9996190747073513
+The F1 Score of the Model is 0.999618979312818
+
+Confusion Matrix saved as knn_confusion_matrix_02032024225827.png
+
+Top 50 instances with actual and predicted labels:
+Instance 1: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 2: Actual Label - DDoS, Predicted Label - DDoS
+Instance 3: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 4: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 5: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 6: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 7: Actual Label - DDoS, Predicted Label - DDoS
+Instance 8: Actual Label - DDoS, Predicted Label - DDoS
+Instance 9: Actual Label - DDoS, Predicted Label - DDoS
+Instance 10: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 11: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 12: Actual Label - DDoS, Predicted Label - DDoS
+Instance 13: Actual Label - DDoS, Predicted Label - DDoS
+Instance 14: Actual Label - DDoS, Predicted Label - DDoS
+Instance 15: Actual Label - DDoS, Predicted Label - DDoS
+Instance 16: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 17: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 18: Actual Label - DDoS, Predicted Label - DDoS
+Instance 19: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 20: Actual Label - DDoS, Predicted Label - DDoS
+Instance 21: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 22: Actual Label - DDoS, Predicted Label - DDoS
+Instance 23: Actual Label - DDoS, Predicted Label - DDoS
+Instance 24: Actual Label - DDoS, Predicted Label - DDoS
+Instance 25: Actual Label - DDoS, Predicted Label - DDoS
+Instance 26: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 27: Actual Label - DDoS, Predicted Label - DDoS
+Instance 28: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 29: Actual Label - DDoS, Predicted Label - DDoS
+Instance 30: Actual Label - DDoS, Predicted Label - DDoS
+Instance 31: Actual Label - DDoS, Predicted Label - DDoS
+Instance 32: Actual Label - DDoS, Predicted Label - DDoS
+Instance 33: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 34: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 35: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 36: Actual Label - DDoS, Predicted Label - DDoS
+Instance 37: Actual Label - DDoS, Predicted Label - DDoS
+Instance 38: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 39: Actual Label - DDoS, Predicted Label - DDoS
+Instance 40: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 41: Actual Label - DDoS, Predicted Label - DDoS
+Instance 42: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 43: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 44: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 45: Actual Label - DDoS, Predicted Label - DDoS
+Instance 46: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 47: Actual Label - DDoS, Predicted Label - DDoS
+Instance 48: Actual Label - BENIGN, Predicted Label - BENIGN
+Instance 49: Actual Label - DDoS, Predicted Label - DDoS
+Instance 50: Actual Label - DDoS, Predicted Label - DDoS

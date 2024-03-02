@@ -1,4 +1,4 @@
-# model_testing.py
+# models/model_testing.py
 
 from sklearn.metrics import accuracy_score, classification_report
 

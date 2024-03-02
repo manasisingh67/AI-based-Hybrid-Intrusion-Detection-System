@@ -1,14 +1,18 @@
-import sys
-sys.path.append("..")
+# src/main.py
 
+import sys
+sys.path.append('../')
+
+from datetime import datetime
 from supervised_learning.data_preprocessing.data_loader import load_data
 from supervised_learning.data_preprocessing.split_and_save_data import split_and_save_data
 from supervised_learning.data_preprocessing.data_preprocessing import data_preprocessing
 from supervised_learning.additional_preprocessing import apply_pca, scale_data, encode_labels
 from supervised_learning.models.model_training import train_classifier
 from supervised_learning.models.model_testing import test_classifier
-from supervised_learning.evaluation.evaluation_metrics import calculate_accuracy, calculate_recall, calculate_f1_score, calculate_precision, generate_classification_report
-
+from supervised_learning.evaluation.evaluation_metrics import calculate_accuracy, calculate_recall, calculate_f1_score, calculate_precision, generate_classification_report, generate_confusion_matrix
+from supervised_learning.evaluation.save_model import save_model_evaluation
+from supervised_learning.evaluation.visualize_results import visualize_confusion_matrix
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -68,9 +72,16 @@ def main(classifier_name):
     recall = calculate_recall(y_test_encoded, y_pred)
     f1_score = calculate_f1_score(y_test_encoded, y_pred)
     classification_report = generate_classification_report(y_test_encoded, y_pred)
+    confusion_matrix_data = generate_confusion_matrix(y_test_encoded, y_pred)
+
+    # Generate a timestamp for filename uniqueness
+    timestamp = datetime.now().strftime("%d%m%Y%H%M%S")
+
+    # Saving model performance
+    save_model_evaluation(X_test_pca, y_test_encoded, y_pred, accuracy, f1_score, precision, recall, generate_classification_report, confusion_matrix_data, label_mapping, classifier_name, timestamp, output_folder='...')
 
     # Visualize results
-    # TODO
+    visualize_confusion_matrix(confusion_matrix_data, classifier_name, timestamp, output_folder='...')
 
 if __name__ == "__main__":
     # Take classifier name as user input

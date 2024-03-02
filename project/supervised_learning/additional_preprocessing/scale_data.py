@@ -1,3 +1,5 @@
+# additional_preprocessing/scale_data.py
+
 from sklearn.preprocessing import MinMaxScaler
 
 def scale_data(X_train, X_test):

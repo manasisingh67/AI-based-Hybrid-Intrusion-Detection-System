@@ -1,5 +1,6 @@
-# evaluation_metrics.py
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+# evaluation/evaluation_metrics.py
+
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report, confusion_matrix
 
 def calculate_accuracy(y_test, y_pred):
     """
@@ -68,3 +69,17 @@ def generate_classification_report(y_test, y_pred):
     - report: Classification report.
     """
     return classification_report(y_test, y_pred)
+
+def generate_confusion_matrix(y_test, y_pred):
+    """
+    Generate a confusion matrix for a classification model.
+
+    Parameters:
+    - y_test: Test labels.
+    - y_pred: Predicted labels.
+
+    Returns:
+    - report: Classification report.
+    """
+    return confusion_matrix(y_test, y_pred)
+ 
