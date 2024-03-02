@@ -13,7 +13,7 @@ def load_data():
     # Set the path to the directory containing the CSV files
 
     # Access the environment variable
-    data_path = ...
+    data_path = 'C:/Users/Mohit Raj/Desktop/Dataset'
 
     # List all files in the specified directory
     file_list = os.listdir(data_path)
