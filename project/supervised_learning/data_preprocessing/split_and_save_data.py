@@ -26,16 +26,16 @@ def split_and_save_data(df):
 
     # Create directories for saving train and test data if they don't exist
 
-    os.makedirs('C:/Users/Mohit Raj/Desktop/Dataset/train', exist_ok=True)
-    os.makedirs('C:/Users/Mohit Raj/Desktop/Dataset/test', exist_ok=True)
+    os.makedirs('...', exist_ok=True)
+    os.makedirs('...', exist_ok=True)
 
     # Concatenate features and labels for train and test sets
     train_data = pd.concat([X_train, y_train], axis=1)
     test_data = pd.concat([X_test, y_test], axis=1)
 
     # Save train and test data to separate CSV files
-    train_data.to_csv('C:/Users/Mohit Raj/Desktop/Dataset/train/train_data.csv', index=False)
-    test_data.to_csv('C:/Users/Mohit Raj/Desktop/Dataset/test/test_data.csv', index=False)
+    train_data.to_csv('.../train_data.csv', index=False)
+    test_data.to_csv('.../test_data.csv', index=False)
 
     # Return the split sets
     return X_train, X_test, y_train, y_test
