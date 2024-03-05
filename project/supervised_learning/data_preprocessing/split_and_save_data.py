@@ -34,8 +34,8 @@ def split_and_save_data(df):
     test_data = pd.concat([X_test, y_test], axis=1)
 
     # Save train and test data to separate CSV files
-    train_data.to_csv('.../train_data.csv', index=False)
-    test_data.to_csv('.../test_data.csv', index=False)
+    train_data.to_csv('...', index=False)
+    test_data.to_csv('...', index=False)
 
     # Return the split sets
     return X_train, X_test, y_train, y_test

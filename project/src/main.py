@@ -85,14 +85,14 @@ def main(learning_type):
         input_shape = (X_train_pca.shape[1],)  # Assuming X_train_pca is your input data after PCA
         num_classes = len(label_mapping)    # Number of classes in your dataset
         # Build the model
-        model = model_dl(input_shape, num_classes)
+        model = model_dl.build_multiclass_model(input_shape, num_classes)
         # Train the model
-        history = training_dl(model, X_train, y_train, X_test, y_test)
+        history = model.fit(X_train_pca, y_train_encoded, epochs=10, batch_size=32, validation_split=0.2)
         # Evaluate the model
-        evaluation_dl(model, X_test, y_test)
+        evaluation_dl.evaluate_model(model, X_test_pca, y_test_encoded)
         # Save the model
-        saving_dl(model, "multiclass_classification_model.h5")
+        saving_dl.save_model(model, "multiclass_classification_model.h5")
 
 if __name__ == "__main__":
-    learning_type = input("Enter the learning type : ml or dl")
+    learning_type = input("Enter the learning type: ml or dl\n")
     main(learning_type)
